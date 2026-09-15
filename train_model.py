@@ -89,7 +89,7 @@ for col in cat_features:
             column_name=col,
             slice_value=slicevalue,
             categorical_features=cat_features,
-            label='salary',
+            label="salary",
             encoder=encoder,
             lb=lb,
             model=model
