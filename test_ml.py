@@ -45,7 +45,7 @@ def sample_data_with_categorical_slice():
 
         return data, cat_features
 
-# TODO: implement the first test. Change the function name and input as needed
+# implement the first test. Change the function name and input as needed
 def test_train_model(sample_data):
     """
     Test the train_model function
@@ -55,7 +55,7 @@ def test_train_model(sample_data):
 
     assert model is not None
 
-# TODO: implement the second test. Change the function name and input as needed
+# implement the second test. Change the function name and input as needed
 def test_model_metrics(sample_data):
     """
     Test the metrics of the trained model
@@ -71,7 +71,7 @@ def test_model_metrics(sample_data):
     assert fbeta >= 0 and fbeta <= 1
 
 
-# TODO: implement the third test. Change the function name and input as needed
+# implement the third test. Change the function name and input as needed
 def test_performance_on_categorical_slice(sample_data_with_categorical_slice):
     """
     Test the performance of the model on a categorical slice of the data
