@@ -37,7 +37,7 @@ The model is evaluated on the held-out test split from the same census dataset, 
 
 ## Metrics
 
-The model is evaluated using precision, recall, and F1 score. These metrics are computed on the binary salary label and are used both overall and within categorical slices of the data.
+The model is evaluated using precision, recall, and F1 score. These metrics are computed on the binary salary label and are used both overall and within categorical slices of the data. On the held-out test set, the model achieved: Precision: 0.7357 | Recall: 0.5633 | F1: 0.6381.
 
 ## Ethical Considerations
 
