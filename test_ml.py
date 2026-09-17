@@ -63,12 +63,12 @@ def test_model_metrics(sample_data):
     X_train, y_train = sample_data
     model = train_model(X_train, y_train)
     preds = model.predict(X_train)
-
+    
     precision, recall, fbeta = compute_model_metrics(y_train, preds)
 
-    assert precision >= 0 and precision <= 1
-    assert recall >= 0 and recall <= 1
-    assert fbeta >= 0 and fbeta <= 1
+    assert precision == pytest.approx(1.0, rel=1e-2)
+    assert recall == pytest.approx(1.0, rel=1e-2)
+    assert fbeta == pytest.approx(1.0, rel=1e-2)
 
 
 # implement the third test. Change the function name and input as needed
@@ -93,6 +93,6 @@ def test_performance_on_categorical_slice(sample_data_with_categorical_slice):
         data, column_name, slice_value, categorical_features, label, encoder, label_binarizer, model
     )
 
-    assert isinstance(precision, float)
-    assert isinstance(recall, float)
-    assert isinstance(fbeta, float)
+    assert precision == pytest.approx(1.0, rel=1e-2)
+    assert recall == pytest.approx(1.0, rel=1e-2)
+    assert fbeta == pytest.approx(1.0, rel=1e-2)
